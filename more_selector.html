@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more more_selectors</title>
+    <link rel="stylesheet" href="more_selectors.css">
+    <style>
+        h1{
+    background-color: crimson;
+    font-weight: bold;
+    margin: 10px;
+}
+
+div p{
+    background-color: aqua;
+}
+p{
+   background-color: red;
+}
+div li p{
+    background-color: blue;
+} 
+
+/* div>p{
+    background-color: yellowgreen;use for direct targeting  any element  direct after the div 
+}
+
+div + p{
+    background-color: blue; targeting element who previous sibling id div  
+} */
+    </style>
+</head>
+<body>
+    <h1>this is a heading</h1>
+
+    <div id="container">
+        <div id="row">
+            <ul>
+                <li><p>this p is inside li</p></li>
+            </ul>
+            <p>this is p in div</p>
+
+        </div>
+        <p>this is p out of div   inside the container div</p>
+    </div>
+
+    <p>this is outer p</p>
+</body>
+</html>

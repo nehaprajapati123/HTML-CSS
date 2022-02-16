@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link rel="stylesheet" href="alignment.css">
+    <style>
+        *{
+   box-sizing: border-box;
+}
+body{
+    font-family:'Syne Tactile';
+
+}
+
+#container{
+    border: 1px solid black;
+    background-color: rgb(185, 145, 185);
+    margin:  33px auto;
+    width: groove900px;
+
+}
+.item{
+    background-color: rgb(143, 143, 185);
+    border: 2px solid black;
+    margin:12px  3px;
+    padding: 12px  3px;
+    
+
+}
+#computer{
+    float: left;
+    width: 48%;
+    /* clear: left; */
+}
+#fruit{
+    float:right;
+    width: 48%;
+    /* clear: left; */
+
+}
+#statinary{
+    /* float: left;  */
+    clear: both;
+     clear: left;
+    /* clear: right;  */
+    width: 100%;
+   
+
+} 
+p,h3{
+    /* text-align: left;
+    text-align: right;
+    text-align:center; */
+    text-align:justify;
+
+}
+
+h1{
+    margin: 23px auto;
+    width: 455px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="container" class="class">
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam aperiam voluptas laborum commodi. Earum
+                possimus saepe molestiae ullam a amet debitis, asperiores suscipit cupiditate labore sapiente odio fuga
+                quam enim.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam aperiam voluptas laborum commodi. Earum
+                possimus saepe molestiae ullam a amet debitis, asperiores suscipit cupiditate labore sapiente odio fuga
+                quam enim.
+        </p>
+
+        </div>
+        <div id="stationary" class="item">
+        <h3>stationary</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam aperiam voluptas laborum commodi. Earum
+            possimus saepe molestiae ullam a amet debitis, asperiores suscipit cupiditate labore sapiente odio fuga quam
+            enim.
+        </p>
+    </div>
+    </div>
+
+</body>
+
+</html>

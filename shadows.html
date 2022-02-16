@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow & text shadow</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid red;
+        }
+        .item{
+            border: 2px solid black;
+            margin: 23px;
+            padding: 23px;
+            background-color: aqua;
+            /* box-shadow: 5px 5px hotpink; */
+            /* box-shadow:-5px -5px hotpink; */
+            /* box-shadow: 5px -5px 19px 5px hotpink; */
+            /* x,y,opacity,spread-radius color */
+
+/* box-shadow: inset -5px 5px 5px hotpink; */
+/* box-shadow inside */
+
+box-shadow: 5px 9px hotpink, -9px -5px olivedrab;
+
+            
+        }
+        .item h1{
+            text-shadow: 1px 2px red;
+        }
+        .item h2{
+            text-shadow: 1px 4px 3px red;
+  
+        } #item3{
+           background: url("nightimage.jpeg") no-repeat center center/cover;
+           color: aliceblue;
+           text-shadow: 2px 3px 6px white;
+  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="item">
+        <h1>item1 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vitae esse corporis non neque
+                atque impedit voluptate unde! Ut voluptate maiores totam impedit, cum voluptas necessitatibus nemo.
+                Quisquam accusantium alias nobis quos sit soluta.</p>
+        </h1>
+    </div>
+    <div class="item">
+        <h2>item2 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vitae esse corporis non neque
+                atque impedit voluptate unde! Ut voluptate maiores totam impedit, cum voluptas necessitatibus nemo.
+                Quisquam accusantium alias nobis quos sit soluta.</p>
+        </h2>
+    </div>
+    <div class="item" id="item3">
+        <h3>item3<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vitae esse corporis non neque
+                atque impedit voluptate unde! Ut voluptate maiores totam impedit, cum voluptas necessitatibus nemo.
+                Quisquam accusantium alias nobis quos sit soluta.</p>
+        </h3>
+    </div>
+</div>
+</body>
+
+</html>

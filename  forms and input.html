@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>this is form learning
+
+    </h2>
+    <form action="backend.php" type="reset" style="border: 2px solid black;">
+
+    <div>
+        <!--inputs-->
+        <label for="name">color:</label>
+        <input type="text" name="color" id="name" placeholder="Enter Your Email">
+    </div>
+    <br>
+    <label for="combination">combination:</label>
+    <div>
+        <input type="text" name="color conbination" id="combination">
+    </div>
+    <br>
+    <div>
+        <label for="email">email: </label>
+        <input type="email" name="email" id="email">
+    </div>
+    <!--input:email--><br>
+    <div>
+        <label for=" date">date:</label>
+        <input type="date" id=" date">
+    </div>
+    <br>
+    <!--date time inpur-->
+    <div>
+        <label for="time">time:</label>
+        <input type="time" id="time">
+    </div><br>
+    <div>
+        <label for="s.no">s.no: </label>
+        <input type="number" id="s.no">
+    </div><br>
+    <div>
+        <!--checkbox-->
+        male:<input type="checkbox" name="gender">
+        female: <input type="checkbox" name="gender" checked>
+        <!--by defalt checked-->
+        other: <input type="checkbox" name="gender">
+    </div>
+    <div>
+        <!--radio buttons-->
+        <label for="gender">gender:</label>
+        male<input type="radio" name=gender> female: <input type="radio" name=gender> other: <input type="radio"
+            name=gender id="gender">
+        <br>
+        <div>
+            <label for="text">text</label>
+            <textarea name="write" cols="3" rows="5" id="text"></textarea>
+        </div>
+<div>
+        <label for="car">car </label>
+        <select name="my car" id="car" placeholder="select">
+            <option value="">select</option>
+            <option value="ma">maruti</option>
+            <option value="su">suzuki</option>
+            <option value="alt">aulto</option>
+        </select>
+
+</div>
+
+            <!--submit button-->
+
+    <div><input type="submit" value="submit now"></input>
+
+                    <!--reset button-->
+
+    <input type="reset" value="reset now" />
+  
+    </div>
+    <!--reset form (alt+down key) for downing the text-->
+
+
+
+<div id="select_store">
+    <div id="selectcity_p">
+    <select name="select cityr" id="car" placeholder="select">
+        <h2>select city</h2>
+        <option value="">select city</option>
+        <option value="ma">maruti</option>
+        <option value="su">suzuki</option>
+        <option value="alt">aulto</option>
+    </select>
+</div>
+
+</div>
+
+    
+</form >
+ 
+
+
+</body>
+
+</html>

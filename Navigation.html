@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="Navigation.css">
+    <style>
+        #navbar {
+    background-color: black;
+    height: 30px;
+    color: thistle;
+}
+#navbar ul{
+    overflow:auto;
+}
+#navbar li{
+    float: right;
+    list-style: none;
+}
+#navbar a{
+    padding: 15px 15px;
+    font-size: 20px;
+    color: thistle;
+}
+#navbar a:hover{
+    color: turquoise;
+    background-color: violet;
+    border-radius: 50%;
+}
+#search{
+margin-top: 5px;
+border-radius: 5px;
+width: 100px;
+}
+#search:hover{
+color: turquoise;
+background-color: violet;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">name</a></li>
+                <li><a href="#">class</a></li>
+                <li><a href="#">roll_no.</a></li>
+                <li><a href="#">school</a></li>
+                <div>
+                    <input type="text" name="search" id="search" placeholder="search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

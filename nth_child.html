@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute & nth psedo selectors</title>
+    <link rel="stylesheet" href="psedo_selectors.css">
+    <style>
+        .container{
+    display: block;
+    width: 233px;
+    margin: auto;
+}
+input{
+    display: block;
+    
+}
+input[type="text"]{
+    background-color: crimson;
+    margin-bottom: 10px;
+    /* we can target inputtype */
+}
+a[target]{
+    color: yellow;
+    /* access link's target */
+    
+}
+a[target=_self]{
+    color: blue;
+    font-size:50px;
+    border: 2px solid hotpink;
+    background-color: gray;
+    /* access specific target of links */
+
+}
+li:nth-child(3){
+    color: aqua;
+    /* acessing particular lisdt itam */
+}
+
+li:nth-child(5){
+    color:crimson;
+}
+
+li:nth-child(7){
+    color: rgb(255, 0, 191);
+    background-color: palegoldenrod;
+}
+li:nth-child(2n+0){
+    color: rgb(43, 255, 0);
+    /* access every tagrget from 0 , every 2 */
+}
+li:nth-child(even){
+    background-color: hotpink;
+}
+li:nth-child(odd){
+    background-color: rgb(0, 238, 255);
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1><a href="https://google.com" target="_blank">google</a></h1>
+    <h1><a href="https://facebook.com" target="_self">facebook</a></h1>
+
+    <div>
+
+        <form action="" class="container"></form>
+        <input type="text" placeholder="enter your name">
+        <input type="passward" placeholder="enter your passward">
+        <ul>
+        <li class="item" id="item1">first</li>
+        <li class="item" id="item2">second</li>
+        <li class="item" id="item3">third</li>
+        <li class="item" id="item4">forth</li>
+        <li class="item" id="item5">fifth</li>
+        <li class="item" id="item6">sixth</li>
+        <li class="item" id="item7">seventh</li>
+        <li class="item" id="item8">eightth</li>
+        <li class="item" id="item9">nineth</li>
+    </ul>
+         </div>
+</body>
+
+</html>
