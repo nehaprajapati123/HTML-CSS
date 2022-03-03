@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variabls and custom property</title>
+    <style>
+        .container{
+display: flex;
+        }
+        .box{
+            /* --bg_color:yellow; */
+            background-color: var(--bg_color);
+            width: 200px;
+            height: 200px;
+            border: 4px solid grey;
+            margin: 2px 9px;
+            /* if declaring color var in curly braces it act like local scope*/
+            
+        }
+        :root{
+            --bg_color:yellow;
+
+            /* give color globally */
+        }
+        .container{
+            background-color: blue;
+            height: 500px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>
